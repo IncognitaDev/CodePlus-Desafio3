@@ -24,6 +24,11 @@ const parentList = [
 ]
 
 function renderParentList(list){
+
+  parentList.forEach(parentObj => (
+    $parentList.innerHTML += `<li>${parentObj.name} é pai/mãe de ${parentObj.name}</li>`
+  )) 
+
   console.log(list);
 }
 
